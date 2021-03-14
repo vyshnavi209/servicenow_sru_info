@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="studentinformation" max_length="40" name="x_594702_sru_studentinformation" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element label="Contact" max_length="40" name="contact" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="date of birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="-- New choice --" value="-- New choice --"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Emailid" max_length="40" name="emailid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="name of the student" max_length="40" name="name_of_the_student" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="phone_number_e164"/>
+        <element label="photo" max_length="40" name="photo" type="user_image"/>
+        <element label="Rollno" max_length="40" name="rollno" type="integer"/>
+    </element>
+</database>
